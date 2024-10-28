@@ -13,4 +13,6 @@ using NarvaezEsteban_ExamenProgreso1.Models;
         }
 
         public DbSet<NarvaezEsteban_ExamenProgreso1.Models.Celular> Celular { get; set; } = default!;
+
+public DbSet<NarvaezEsteban_ExamenProgreso1.Models.Narvaez> Narvaez { get; set; } = default!;
     }

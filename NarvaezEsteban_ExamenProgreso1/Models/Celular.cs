@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace NarvaezEsteban_ExamenProgreso1.Models
 {
@@ -9,9 +10,9 @@ namespace NarvaezEsteban_ExamenProgreso1.Models
         [Required]
         [StringLength(100)]
         public string Modelo { get; set; }
-        [MaxLength(10)]
+        [Range (1980, 2025)]
         public int año { get; set; }
-        [MinLength(1)]
+        [AllowNull]
         public int precio { get; set; }
 
     }
