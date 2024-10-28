@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
 namespace NarvaezEsteban_ExamenProgreso1.Models
 {
@@ -9,10 +10,10 @@ namespace NarvaezEsteban_ExamenProgreso1.Models
         public string Id { get; set; }
         [MaxLength(100)]
         public string Nombre { get; set; }
-        [MinLength(2)]
+        [AllowNull]
         public int Edad {  get; set; }
         public float Altura { get; set; }
-        public bool Nacionalidad { get; set; }
+        public bool Esecua { get; set; }
         [Required]
         public DateOnly Fechanacimiento { get; set; }
         [ForeignKey("Celular")]
