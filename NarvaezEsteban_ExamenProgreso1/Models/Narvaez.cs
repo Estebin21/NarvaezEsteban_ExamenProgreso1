@@ -13,7 +13,7 @@ namespace NarvaezEsteban_ExamenProgreso1.Models
         [AllowNull]
         public int Edad {  get; set; }
         public float Altura { get; set; }
-        public bool Esecua { get; set; }
+        public bool Nacionalidad { get; set; }
         [Required]
         public DateOnly Fechanacimiento { get; set; }
         [ForeignKey("Celular")]
